@@ -11,16 +11,9 @@
   <%= csrf_meta_tags %>
 
 <script type="text/javascript">
-
-var player;
-var content;
-var video;
-var menu;
-var chromeless;
-
 var videos = {
     list:     [ '1119008772001', '1118991809001', '1074269253001' ],
-    count: 0,
+    count: 1,
     get_next: function(){
         var cnt = videos.count;
         if( videos.count >= (videos.list.length - 1) ){
@@ -33,59 +26,48 @@ var videos = {
     
 }
 
-// called when template loads, we use this to store a reference to the modules
-// and add event listeners for media load (when the user clicks on a video)
-function onTemplateLoaded(arg_player) {
-	player = brightcove.getExperience(arg_player);
 
-	video = player.getModule(APIModules.VIDEO_PLAYER);
-	content = player.getModule(APIModules.CONTENT);
-	content.addEventListener(BCContentEvent.MEDIA_LOAD, onMediaLoad);
-	exp 	= player.getModule(APIModules.EXPERIENCE);
-	exp.addEventListener(BCExperienceEvent.TEMPLATE_READY, onTemplateReady);
-        menu = player.getModule(APIModules.MENU);
-        
-        //chromeless = brightcove.getElementsByType("ChromelessVideoPlayer")
+var example1 = {};
+example1.previousVideoID=0;
+ 
+// called when template loads, this function stores a reference to the player and modules.
+// Then event listeners will be added for when the template is ready and when a user 
+// clicks on a video.
+function myTemplateLoaded1(experienceID) {
+    example1.player = brightcove.api.getExperience(experienceID);
+     
+    example1.modVP = example1.player.getModule(brightcove.api.modules.APIModules.VIDEO_PLAYER);
+    example1.modExp = example1.player.getModule(brightcove.api.modules.APIModules.EXPERIENCE);
+    example1.modCon = example1.player.getModule(brightcove.api.modules.APIModules.CONTENT);
+    example1.modExp.addEventListener(brightcove.api.events.ExperienceEvent.TEMPLATE_READY, onTemplateReady1);
+    example1.modVP.addEventListener(brightcove.api.events.MediaEvent.COMPLETE, onMediaEventFired2);
+    
 
-        video.setVolume(0);
-        playTitleFromList(videos.get_next());
+}
+ 
+function onTemplateReady1(evt) {
+    example1.modVP.play();
+}
+ 
+
+function onMediaEventFired2(progressEvent){
+    
+    var video_length = Math.round(progressEvent.media.length);
+    var video_position = Math.round( ( progressEvent.position ) * 1000 )
+    
+    if( video_length + 1  >= video_position && video_length  <= video_position + 1 ){
+        example1.modCon.getMediaByID(videos.get_next(), getMediaCallback1);
+        example1.modVP.addEventListener(brightcove.api.events.MediaEvent.COMPLETE, onMediaEventFired2);
+    }
+}
+ 
+function getMediaCallback1(returnedMedia) {
+   // Load and start the video that we retrieved from the server
+   example1.modVP.loadVideoByID(returnedMedia.id);
 }
 
-function onTemplateReady(e){
-	exp.addEventListener(BCExperienceEvent.CONTENT_LOAD, onContentLoad);
-	video.addEventListener(BCMediaEvent.COMPLETE, onMediaComplete);
-}
-
-
-function onContentLoad(e) {
-    //alert("BCExperienceEvent.CONTENT_LOAD "+e.media.id);
-}
-
-function onMediaComplete(e) {
-    //playTitleFromList("1119008772001")    1074269253001
-    chromeless = exp.getElementsByType("ChromelessVideoPlayer");
-    var control = chromeless[0].getControls();
-    control.setVisible(false)
-
-    playTitleFromList(videos.get_next());
-}
-function playTitle(id) {
-	content.getMediaAsynch(id);
-}
-
-function onMediaLoad(e) {
-	video.loadVideo(e.media.id);
-}
-
-function playTitleFromList(id) {
-        content.getMediaAsynch(id);
-}
-
-
-//]]>
 </script>
 <script language="JavaScript" type="text/javascript" src="http://admin.brightcove.com/js/BrightcoveExperiences.js"></script>
-<script language="JavaScript" type="text/javascript" src="http://admin.brightcove.com/js/APIModules_all.js"> </script>
 </head>
 <body>
 
@@ -142,7 +124,9 @@ found at https://accounts.brightcove.com/en/terms-and-conditions/.
   <param name="isVid" value="true" />
   <param name="isUI" value="true" />
   <param name="dynamicStreaming" value="true" />
-　<param name="@videoPlayer" value="" />
+　<param name="@videoPlayer" value="1119008772001" />
+  <param name="includeAPI" value="true" /> 
+  <param name="templateLoadHandler" value="myTemplateLoaded1" /> 
 </object>
 
 <!-- 

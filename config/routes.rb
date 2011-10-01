@@ -1,6 +1,6 @@
 Cwm::Application.routes.draw do
+  match ':action', :controller => "contents"
   root :to => 'contents#home'
-  match ':action' => 'contents#:action'
   get "contents/home"
 
   get "contents/marketing_branding"

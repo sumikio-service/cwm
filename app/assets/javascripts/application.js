@@ -11,6 +11,13 @@
 
 $(function(){
 
+    if( $('.selected').parent('li').attr('id') == "gm_sub_complete_brand_experience" ){
+        $('#gm_sub_complete_brand_experience').show();
+    }
+    if( $('.selected').parent('li').attr('id') == "gm_sub_clients" ){
+        $('#gm_sub_clients').show();
+    }
+
     $('#gm_marketing_branding')
     .bind('mouseover', function(){
         $('#gm_sub_complete_brand_experience').slideDown();

@@ -26,13 +26,48 @@
             </h1>
             <div id="gm_area">
             <ul id="gm">
+              <% if params[:action] == "home" -%>
                 <li id="gm_home" class="gm_main_menu"><a href="/home" class="selected">Home</a></li>
-                <li id="gm_marketing_branding" class="gm_main_menu"><a href="/marketing_branding">Marketing and Branding</a></li>
+              <% else -%>
+                <li id="gm_home" class="gm_main_menu"><a href="/home">Home</a></li>
+              <% end -%>
+              
+              <% if params[:action] == "marketing_branding" -%>
+                <li id="gm_marketing_branding" class="gm_main_menu selected"><a href="/marketing_branding" class="selected" >Marketing and Branding</a></li>
+              <% else -%>
+                <li id="gm_marketing_branding" class="gm_main_menu"><a href="/marketing_branding"  >Marketing and Branding</a></li>
+              <% end -%>
+              
+              <% if params[:action] == "complete_brand_experience" -%>
+                <li id="gm_sub_complete_brand_experience" class="gm_sub_menu"><a href="/complete_brand_experience" class="selected" >Marketing and Branding</a></li>
+              <% else -%>
                 <li id="gm_sub_complete_brand_experience" class="gm_sub_menu"><a href="/complete_brand_experience">Marketing and Branding</a></li>
+              <% end -%>
+              
+              <% if params[:action] == "media_production" -%>
+                <li id="gm_media_production" class="gm_main_menu"><a href="/media_production" class="selected">Media Production</a></li>
+              <% else -%>
                 <li id="gm_media_production" class="gm_main_menu"><a href="/media_production">Media Production</a></li>
+              <% end -%>
+              
+              <% if params[:action] == "about" -%>
+                <li id="gm_about" class="gm_main_menu"><a href="/about" class="selected">About</a></li>
+              <% else -%>
                 <li id="gm_about" class="gm_main_menu"><a href="/about">About</a></li>
+              <% end -%>
+              
+              <% if params[:action] == "clients" -%>
+                <li id="gm_sub_clients" class="gm_sub_menu"><a href="/clients" class="selected">Clients</a></li>
+              <% else -%>
                 <li id="gm_sub_clients" class="gm_sub_menu"><a href="/clients">Clients</a></li>
+              <% end -%>
+              
+              <% if params[:action] == "inspiration" -%>
+                <li id="gm_inspiration" class="gm_main_menu"><a href="/inspiration" class="selected">Inspiration</a></li>
+              <% else -%>
                 <li id="gm_inspiration" class="gm_main_menu"><a href="/inspiration">Inspiration</a></li>
+              <% end -%>
+              
                 <li id="gm_contact" class="gm_main_menu"><a href="/contact">Contact</a></li>
             </ul>
             </div>

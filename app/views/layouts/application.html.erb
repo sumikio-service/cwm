@@ -10,66 +10,10 @@
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 
-<script type="text/javascript">
-var videos = {
-    list:     [ '1119008772001', '1118991809001', '1074269253001' ],
-    count: 1,
-    get_next: function(){
-        var cnt = videos.count;
-        if( videos.count >= (videos.list.length - 1) ){
-            videos.count = 0;
-        }else{
-            videos.count += 1
-        }
-        return videos.list[cnt]
-    }
-    
-}
 
-
-var example1 = {};
-example1.previousVideoID=0;
- 
-// called when template loads, this function stores a reference to the player and modules.
-// Then event listeners will be added for when the template is ready and when a user 
-// clicks on a video.
-function myTemplateLoaded1(experienceID) {
-    example1.player = brightcove.api.getExperience(experienceID);
-     
-    example1.modVP = example1.player.getModule(brightcove.api.modules.APIModules.VIDEO_PLAYER);
-    example1.modExp = example1.player.getModule(brightcove.api.modules.APIModules.EXPERIENCE);
-    example1.modCon = example1.player.getModule(brightcove.api.modules.APIModules.CONTENT);
-    example1.modExp.addEventListener(brightcove.api.events.ExperienceEvent.TEMPLATE_READY, onTemplateReady1);
-    example1.modVP.addEventListener(brightcove.api.events.MediaEvent.COMPLETE, onMediaEventFired2);
-    
-
-}
- 
-function onTemplateReady1(evt) {
-    example1.modVP.play();
-}
- 
-
-function onMediaEventFired2(progressEvent){
-    
-    var video_length = Math.round(progressEvent.media.length);
-    var video_position = Math.round( ( progressEvent.position ) * 1000 )
-    
-    if( video_length + 1  >= video_position && video_length  <= video_position + 1 ){
-        example1.modCon.getMediaByID(videos.get_next(), getMediaCallback1);
-        example1.modVP.addEventListener(brightcove.api.events.MediaEvent.COMPLETE, onMediaEventFired2);
-    }
-}
- 
-function getMediaCallback1(returnedMedia) {
-   // Load and start the video that we retrieved from the server
-   example1.modVP.loadVideoByID(returnedMedia.id);
-}
-
-</script>
 <script language="JavaScript" type="text/javascript" src="http://admin.brightcove.com/js/BrightcoveExperiences.js"></script>
 </head>
-<body>
+<body id="<%= params[:action] %>">
 
 
 <div id="wrapper">
@@ -89,7 +33,7 @@ function getMediaCallback1(returnedMedia) {
                 <li id="gm_about" class="gm_main_menu"><a href="/about">About</a></li>
                 <li id="gm_sub_clients" class="gm_sub_menu"><a href="/clients">Clients</a></li>
                 <li id="gm_inspiration" class="gm_main_menu"><a href="/inspiration">Inspiration</a></li>
-                <li id="gm_contact" class="gm_main_menu"><a href="/contacts">Contact</a></li>
+                <li id="gm_contact" class="gm_main_menu"><a href="/contact">Contact</a></li>
             </ul>
             </div>
             <div id="cwm_ad_area"><a href="#"><img src="images/img_slide.gif" alt="Complete Brand Experience" /></a></div>
@@ -100,109 +44,7 @@ function getMediaCallback1(returnedMedia) {
             </div>
         </div>
         <div id="left_area">
-            <div id="main_video">
-
-<!-- Start of Brightcove Player -->
-
-<div style="display:none">
-
-</div>
-
-<!--
-By use of this code snippet, I agree to the Brightcove Publisher T and C 
-found at https://accounts.brightcove.com/en/terms-and-conditions/. 
--->
-
-<script language="JavaScript" type="text/javascript" src="http://admin.brightcove.com/js/BrightcoveExperiences.js"></script>
-
-<object id="myExperience" class="BrightcoveExperience">
-  <param name="bgcolor" value="#FFFFFF" />
-    <param name="width" value="668" />
-    <param name="height" value="375" />
-  <param name="playerID" value="1118567465001" />
-  <param name="playerKey" value="AQ~~,AAAA-kT3FyE~,jKt4cDeDK0VN2MX0QOCuPw61nq0iqpVy" />
-  <param name="isVid" value="true" />
-  <param name="isUI" value="true" />
-  <param name="dynamicStreaming" value="true" />
-　<param name="@videoPlayer" value="1119008772001" />
-  <param name="includeAPI" value="true" /> 
-  <param name="templateLoadHandler" value="myTemplateLoaded1" />
-</object>
-
-<!-- 
-This script tag will cause the Brightcove Players defined above it to be created as soon
-as the line is read by the browser. If you wish to have the player instantiated only after
-the rest of the HTML is processed and the page load is complete, remove the line.
--->
-<script type="text/javascript">brightcove.createExperiences();</script>
-
-<!-- End of Brightcove Player -->
-
-
-
-            </div>
-            <div id="article">
-                <div id="futured_video">
-                    <h2>Featured Videos & Articles</h2>
-                    
-                    <div class="one_section">
-                        <img src="images/sample_video.gif" class="futured_video_image" />
-                        <div class="video_text_area">
-                            <h3>Takayuki Zoshi</h3>
-                            <span class="tags">Artist Profile Video</span>
-                            <p>Takayuki Zoshi is a Japanese wood carver based in Sobastopol, California. Main motif of his artwork is derived from buddhism tradition. He corved his first Buddha stotue</p>
-                        </div>
-                    </div>
-                    
-                    <div class="one_section">
-                        <img src="images/sample_video.gif" class="futured_video_image" />
-                        <div class="video_text_area">
-                            <h3>Takayuki Zoshi</h3>
-                            <span class="tags">Artist Profile Video</span>
-                            <p>Takayuki Zoshi is a Japanese wood carver based in Sobastopol, California. Main motif of his artwork is derived from buddhism tradition. He corved his first Buddha stotue</p>
-                        </div>
-                    </div>
-                    
-                    <div class="one_section">
-                        <img src="images/sample_video.gif" class="futured_video_image" />
-                        <div class="video_text_area">
-                            <h3>Takayuki Zoshi</h3>
-                            <span class="tags">Artist Profile Video</span>
-                            <p>Takayuki Zoshi is a Japanese wood carver based in Sobastopol, California. Main motif of his artwork is derived from buddhism tradition. He corved his first Buddha stotue</p>
-                        </div>
-                    </div>
-                    
-                    <div class="one_section">
-                        <img src="images/sample_video.gif" class="futured_video_image" />
-                        <div class="video_text_area">
-                            <h3>Takayuki Zoshi</h3>
-                            <span class="tags">Artist Profile Video</span>
-                            <p>Takayuki Zoshi is a Japanese wood carver based in Sobastopol, California. Main motif of his artwork is derived from buddhism tradition. He corved his first Buddha stotue</p>
-                        </div>
-                    </div>
-                    
-                </div>
-                <div id="recently_blogged">
-                    <h2>Recently Blogged</h2>
-                    <div class="one_section">
-                        <h3>What is Branding?</h3>
-                        <div class="posted">Poste August 7th, 2011</div>
-                    </div>
-                    
-                    <div class="one_section">
-                        <h3>Are Japanese people more individualistic than Americans?</h3>
-                        <div class="posted">Poste August 7th, 2011</div>
-                    </div>
-                    
-                    <div class="one_section">
-                        <h3>Why videos on website?</h3>
-                        <div class="posted">Poste August 7th, 2011</div>
-                    </div>
-                    
-                    
-                </div>
-            </div>
-            
+          <%= yield %>
         </div>
         <div style="clear: both"></div>
         <div id="footer">

@@ -1,2 +1,104 @@
-<h1>Contents#home</h1>
-<p>Find me in app/views/contents/home.html.erb</p>
+<div id="home">
+           <div id="main_video">
+              
+              <!-- Start of Brightcove Player -->
+              
+              <div style="display:none">
+              
+              </div>
+              
+              <!--
+              By use of this code snippet, I agree to the Brightcove Publisher T and C 
+              found at https://accounts.brightcove.com/en/terms-and-conditions/. 
+              -->
+              
+              <script language="JavaScript" type="text/javascript" src="http://admin.brightcove.com/js/BrightcoveExperiences.js"></script>
+              
+              <object id="myExperience" class="BrightcoveExperience">
+                <param name="bgcolor" value="#FFFFFF" />
+                  <param name="width" value="668" />
+                  <param name="height" value="375" />
+                <param name="playerID" value="1118567465001" />
+                <param name="playerKey" value="AQ~~,AAAA-kT3FyE~,jKt4cDeDK0VN2MX0QOCuPw61nq0iqpVy" />
+                <param name="isVid" value="true" />
+                <param name="isUI" value="true" />
+                <param name="dynamicStreaming" value="true" />
+              　<param name="@videoPlayer" value="1119008772001" />
+                <param name="includeAPI" value="true" /> 
+                <param name="templateLoadHandler" value="myTemplateLoaded1" />
+              </object>
+              
+              <!-- 
+              This script tag will cause the Brightcove Players defined above it to be created as soon
+              as the line is read by the browser. If you wish to have the player instantiated only after
+              the rest of the HTML is processed and the page load is complete, remove the line.
+              -->
+              <script type="text/javascript">brightcove.createExperiences();</script>
+              
+              <!-- End of Brightcove Player -->
+
+
+
+            </div>
+            <div id="article">
+                <div id="futured_video">
+                    <h2>Featured Videos & Articles</h2>
+                    
+                    <div class="one_section">
+                        <img src="images/sample_video.gif" class="futured_video_image" />
+                        <div class="video_text_area">
+                            <h3>Takayuki Zoshi</h3>
+                            <span class="tags">Artist Profile Video</span>
+                            <p>Takayuki Zoshi is a Japanese wood carver based in Sobastopol, California. Main motif of his artwork is derived from buddhism tradition. He corved his first Buddha stotue</p>
+                        </div>
+                    </div>
+                    
+                    <div class="one_section">
+                        <img src="images/sample_video.gif" class="futured_video_image" />
+                        <div class="video_text_area">
+                            <h3>Takayuki Zoshi</h3>
+                            <span class="tags">Artist Profile Video</span>
+                            <p>Takayuki Zoshi is a Japanese wood carver based in Sobastopol, California. Main motif of his artwork is derived from buddhism tradition. He corved his first Buddha stotue</p>
+                        </div>
+                    </div>
+                    
+                    <div class="one_section">
+                        <img src="images/sample_video.gif" class="futured_video_image" />
+                        <div class="video_text_area">
+                            <h3>Takayuki Zoshi</h3>
+                            <span class="tags">Artist Profile Video</span>
+                            <p>Takayuki Zoshi is a Japanese wood carver based in Sobastopol, California. Main motif of his artwork is derived from buddhism tradition. He corved his first Buddha stotue</p>
+                        </div>
+                    </div>
+                    
+                    <div class="one_section">
+                        <img src="images/sample_video.gif" class="futured_video_image" />
+                        <div class="video_text_area">
+                            <h3>Takayuki Zoshi</h3>
+                            <span class="tags">Artist Profile Video</span>
+                            <p>Takayuki Zoshi is a Japanese wood carver based in Sobastopol, California. Main motif of his artwork is derived from buddhism tradition. He corved his first Buddha stotue</p>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div id="recently_blogged">
+                    <h2>Recently Blogged</h2>
+                    <div class="one_section">
+                        <h3>What is Branding?</h3>
+                        <div class="posted">Poste August 7th, 2011</div>
+                    </div>
+                    
+                    <div class="one_section">
+                        <h3>Are Japanese people more individualistic than Americans?</h3>
+                        <div class="posted">Poste August 7th, 2011</div>
+                    </div>
+                    
+                    <div class="one_section">
+                        <h3>Why videos on website?</h3>
+                        <div class="posted">Poste August 7th, 2011</div>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+</div>

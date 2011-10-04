@@ -3,10 +3,8 @@
  * and any sub-directories. You're free to add application-wide styles to this file and they'll appear at
  * the top of the compiled file, but it's generally better to create a new file per style scope.
  *= require_self
- *= require_tree . 
+ *= require_tree .
 */
-
-
 
 a:link    { color: #b8b8b8; text-decoration: none; }
 a:visited { color: #b8b8b8; text-decoration: none; }
@@ -26,9 +24,34 @@ body{
     width: 100%;
     margin:0;
     padding:0;
-    //background: url("../images/CWM_web_home.jpg") no-repeat center top;
+    
     font-family: 'Verdana', 'Arial', 'Tahoma', sans-serif
 }
+
+body#marketing_branding{
+    background: url("../images/CWM_web_marketing_branding.jpg") no-repeat center 30px;
+}
+
+body#complete_brand_experience{
+    background: url("../images/CWM_web_complete_brand_experience.jpg") no-repeat center 30px;
+}
+
+body#media_production{
+    background: url("../images/CWM_web_media_production.jpg") no-repeat center 30px;
+}
+
+body#about{
+    background: url("../images/CWM_web_about.jpg") no-repeat center 30px;
+}
+
+body#clients{
+    background: url("../images/CWM_web_clients.jpg") no-repeat center 30px;
+}
+
+body#inspiration{
+    background: url("../images/CWM_web_inspiration.jpg") no-repeat center 30px;
+}
+
 div#wrapper{
     position: relative;
     height: auto !important;
@@ -42,6 +65,7 @@ div#right_area{
     width: 255px;
     min-height: 1150px;
     background: url("../images/bg_right.gif") no-repeat scroll left bottom transparent;
+    background: white;
 }
 
 div#right_area h1{
@@ -200,106 +224,6 @@ div#left_area{
 }
 
 
-div#left_area div#main_video{
-    width: 662px;
-    height: 375px;
-    background: black;
-}
-
-div#left_area div#article{
-    height: 400px;
-}
-
-div#left_area div#article div#futured_video{
-    float: left;
-    width: 432px;
-    height: 100px;
-    margin-left: 0;
-}
-
-div#left_area div#article div#futured_video h2{
-    font-size: 120%;
-    font-weight: normal;
-    margin-top: 40px;
-    margin-bottom: 0;
-    text-indent: -9999px;
-    background: url("../images/bg_featured_videos_articles.gif") no-repeat scroll left top transparent;
-}
-
-div#left_area div#article div.one_section{
-    margin-bottom: 15px;
-    overflow: auto;
-}
-
-div#left_area div#article img.futured_video_image{
-    margin-top: 15px;
-    margin-left: 5px;
-    float:left;
-    width: 168px;
-}
-
-div#left_area div#article div.video_text_area{
-    float: left;
-    width: 200px;
-    margin-left: 10px;
-
-}
-
-div#left_area div#article div.video_text_area h3{
-    margin-top:15px;
-    margin-bottom:0;
-    margin-left: 0;
-    margin-right: 0;
-    padding:0;
-    font-size: 80%;
-    font-weight: normal;
-}
-
-div#left_area div#article div.video_text_area span{
-    font-size: 60%;
-}
-
-div#left_area div#article div.video_text_area p{
-    color: #b8b8b8;
-    font-size: 55%;
-}
-
-div#left_area div#article div#recently_blogged{
-    float: left;
-    width: 220px;
-    height: 100px;
-}
-div#left_area div#article div#recently_blogged h2{
-    font-size: 120%;
-    font-weight: normal;
-    margin-top: 40px;
-    margin-left: 0;
-    margin-bottom: 0;
-    text-indent: -9999px;
-    background: url("../images/bg_recently_blogged.gif") no-repeat scroll left top transparent;
-}
-
-div#left_area div#article div#recently_blogged div.one_section{
-    overflow: auto;
-    margin-bottom: 15px;
-}
-
-div#left_area div#article div#recently_blogged div.one_section h3{
-    margin-top:15px;
-    margin-bottom:0;
-    margin-left: 0;
-    margin-right: 0;
-    padding:0;
-    font-size: 90%;
-    font-weight: normal;
-}
-
-div#left_area div#article div#recently_blogged div.one_section div.posted{
-    color: #b8b8b8;
-    font-size: 55%;
-    margin-top: 9px;
-}
-
 div#contents{
     width: 924px;
     margin-left: auto;
@@ -316,6 +240,7 @@ div#footer{
     margin-right: auto;
     border-top: 1px solid #d5d5d5;
     color: #b8b8b8;
+    background: white;
 }
 div#footer div#ft_company{
     margin-top: 4px;

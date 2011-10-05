@@ -1,0 +1,19 @@
+
+
+div#left_area div#marketing_branding{
+    margin-top: 80px;
+}
+
+div#left_area div#marketing_branding h2{
+    margin:0;
+    padding:0;
+}
+
+div#left_area div#marketing_branding h2 img{
+    width: 330px;
+
+}
+
+div#left_area div#marketing_branding div.banner_area{
+    margin-top: 35px;
+}

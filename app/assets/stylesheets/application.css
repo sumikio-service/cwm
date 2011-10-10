@@ -6,10 +6,13 @@
  *= require_tree .
 */
 
+/* Application Style */
+
 a:link    { color: #b8b8b8; text-decoration: none; }
 a:visited { color: #b8b8b8; text-decoration: none; }
 a:hover   { color: #b8b8b8; text-decoration: none; }
 a:active  {  }
+
 
 img{
     border: none;
@@ -28,8 +31,33 @@ body{
     font-family: 'Verdana', 'Arial', 'Tahoma', sans-serif
 }
 
+.clear{
+    clear: both;
+}
+
+.article1{
+    
+}
+
+.article1 h3{
+    font-weight: normal;
+    margin:0;
+    padding:0;
+}
+
+.article1 p{
+    margin-top: 15px;
+    color: #989898;
+    font-size: 70%;
+}
+
+
+/* Main Layout */
+
+
+
 body#marketing_branding{
-    background: url("../images/CWM_web_marketing_branding.jpg") no-repeat center 30px;
+    //background: url("../images/CWM_web_marketing_branding.jpg") no-repeat center 30px;
 }
 
 body#complete_brand_experience{
@@ -279,5 +307,6 @@ div#footer ul#ft_menu li a:hover{
 div#footer ul#ft_menu li a.selected{
     color: #333333;
 }
+
 
 

@@ -11,9 +11,26 @@ div#left_area div#marketing_branding h2{
 
 div#left_area div#marketing_branding h2 img{
 
-
 }
 
 div#left_area div#marketing_branding div.banner_area{
     margin-top: 35px;
 }
+
+div#left_area div#marketing_branding div.banner_area div.main_banner{
+    float: left;
+}
+
+div#left_area div#marketing_branding div.banner_area div.main_banner img{
+    width: 430px;
+    height: 170px;
+}
+
+div#left_area div#marketing_branding div.banner_area div.sub_banner{
+    float: right;
+}
+
+div#left_area div#marketing_branding div#marketing{
+    margin-top: 50px;
+}
+

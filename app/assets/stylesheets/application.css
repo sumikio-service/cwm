@@ -49,8 +49,17 @@ body{
     margin-top: 15px;
     color: #989898;
     font-size: 70%;
+    margin-right: 70px;
 }
 
+.article1 ul{
+    
+}
+
+.article1 ul li{
+    color: #989898;
+    font-size: 70%;
+}
 
 /* Main Layout */
 
@@ -73,7 +82,7 @@ body#about{
 }
 
 body#clients{
-    background: url("../images/CWM_web_clients.jpg") no-repeat center 30px;
+    //background: url("../images/CWM_web_clients.jpg") no-repeat center 30px;
 }
 
 body#inspiration{
@@ -95,7 +104,7 @@ div#wrapper{
 div#right_area{
     float: right;
     width: 255px;
-    min-height: 1150px;
+    min-height: 850px;
     background: url("../images/bg_right.gif") no-repeat scroll left bottom transparent;
     background: white;
 }

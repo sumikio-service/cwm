@@ -1,15 +1,24 @@
 
 div#left_area div#clients{
-
+    margin-top: 80px;
 }
 
+div#left_area div#clients p.clients_exp{
+    color: #989898;
+    font-size: 70%;
+    margin-right: 70px;
+}
 
 div#left_area div#clients div.tmp{
-    margin-top: 570px;
+    height: 340px;
+    width: 600px;
+    background-color: #000000;
+    margin-top: 40px;
     
 }
 
 div#left_area div#clients div#clients_logos{
+    margin-top: 25px;
     position: relative;
     height: 640px;
 }

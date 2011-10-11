@@ -28,6 +28,14 @@ div#left_area div#marketing_branding div.banner_area div.main_banner img{
 
 div#left_area div#marketing_branding div.banner_area div.sub_banner{
     float: right;
+    text-align: right;
+    margin-right: 60px;
+    background-color: #f0f0f0;
+    width: 150px;
+    height: 100px;
+    padding-top: 70px;
+    padding-right: 20px;
+    color: #666666;
 }
 
 div#left_area div#marketing_branding div#marketing{

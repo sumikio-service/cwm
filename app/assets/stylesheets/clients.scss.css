@@ -11,7 +11,7 @@ div#left_area div#clients div.tmp{
 
 div#left_area div#clients div#clients_logos{
     position: relative;
-    height: 1000px;
+    height: 640px;
 }
 
 div#left_area div#clients div#clients_logos div.clientlogo{
@@ -20,7 +20,7 @@ div#left_area div#clients div#clients_logos div.clientlogo{
     position: absolute;
     text-indent: -9999px;
     border: 1px solid #E4E5E7;
-    
+    overflow: hidden;
 }
 
 
@@ -57,7 +57,7 @@ div#left_area div#clients div#clients_logos div#client_bbg:hover{
     background: url("../images/clients/Client_BBG.png") no-repeat scroll 0 -121px transparent;
 }
 
-/* BBG 1 - 4 */
+/* CBF 1 - 4 */
 div#left_area div#clients div#clients_logos div#client_cbf{
     top: 372px;
     left: 0px;
@@ -68,7 +68,7 @@ div#left_area div#clients div#clients_logos div#client_cbf:hover{
     background: url("../images/clients/Client_CBF.png") no-repeat scroll 0 -121px transparent;
 }
 
-/* BBG 1 - 4 */
+/* CIE 1 - 5 */
 div#left_area div#clients div#clients_logos div#client_cie{
     top: 496px;
     left: 0px;
@@ -79,6 +79,167 @@ div#left_area div#clients div#clients_logos div#client_cie:hover{
     background: url("../images/clients/Client_CIE.png") no-repeat scroll 0 -121px transparent;
 }
 
+/* BBG 2 - 1 */
+div#left_area div#clients div#clients_logos div#client_cue{
+    top: 0px;
+    left: 153px;
+    background: url("../images/clients/Client_CUE.png") no-repeat scroll 0 0 transparent;
+}
 
+div#left_area div#clients div#clients_logos div#client_cue:hover{
+    background: url("../images/clients/Client_CUE.png") no-repeat scroll 0 -121px transparent;
+}
 
+/* GLD 2 - 2 */
+div#left_area div#clients div#clients_logos div#client_gld{
+    top: 124px;
+    left: 153px;
+    background: url("../images/clients/Client_GLD.png") no-repeat scroll 0 0 transparent;
+}
 
+div#left_area div#clients div#clients_logos div#client_gld:hover{
+    background: url("../images/clients/Client_GLD.png") no-repeat scroll 0 -121px transparent;
+}
+
+/* GTP 2 - 3 */
+div#left_area div#clients div#clients_logos div#client_gtp{
+    top: 248px;
+    left: 153px;
+    background: url("../images/clients/Client_GTP.png") no-repeat scroll 0 0 transparent;
+}
+
+div#left_area div#clients div#clients_logos div#client_gtp:hover{
+    background: url("../images/clients/Client_GTP.png") no-repeat scroll 0 -121px transparent;
+}
+
+/* HHC 2 - 4 */
+div#left_area div#clients div#clients_logos div#client_hhc{
+    top: 372px;
+    left: 153px;
+    background: url("../images/clients/Client_HHC.png") no-repeat scroll 0 0 transparent;
+}
+
+div#left_area div#clients div#clients_logos div#client_hhc:hover{
+    background: url("../images/clients/Client_HHC.png") no-repeat scroll 0 -121px transparent;
+}
+
+/* HSL 2 - 5 */
+div#left_area div#clients div#clients_logos div#client_hsl{
+    top: 496px;
+    left: 153px;
+    background: url("../images/clients/Client_HSL.png") no-repeat scroll 0 0 transparent;
+}
+
+div#left_area div#clients div#clients_logos div#client_hsl:hover{
+    background: url("../images/clients/Client_HSL.png") no-repeat scroll 0 -121px transparent;
+}
+
+/* LIN3 - 1 */
+div#left_area div#clients div#clients_logos div#client_lin{
+    top: 0;
+    left: 306px;
+    background: url("../images/clients/Client_LIN.png") no-repeat scroll 0 0 transparent;
+}
+
+div#left_area div#clients div#clients_logos div#client_lin:hover{
+    background: url("../images/clients/Client_LIN.png") no-repeat scroll 0 -121px transparent;
+}
+
+/* LJL 3 - 2 */
+div#left_area div#clients div#clients_logos div#client_ljl{
+    top: 124px;
+    left: 306px;
+    background: url("../images/clients/Client_LJL.png") no-repeat scroll 0 0 transparent;
+}
+
+div#left_area div#clients div#clients_logos div#client_ljl:hover{
+    background: url("../images/clients/Client_LJL.png") no-repeat scroll 0 -121px transparent;
+}
+
+/* LMX 3 - 3 */
+div#left_area div#clients div#clients_logos div#client_lmx{
+    top: 248px;
+    left: 306px;
+    background: url("../images/clients/Client_LMX.png") no-repeat scroll 0 0 transparent;
+}
+
+div#left_area div#clients div#clients_logos div#client_lmx:hover{
+    background: url("../images/clients/Client_LMX.png") no-repeat scroll 0 -121px transparent;
+}
+
+/* MTG 3 - 4 */
+div#left_area div#clients div#clients_logos div#client_mtg{
+    top: 372px;
+    left: 306px;
+    background: url("../images/clients/Client_MTG.png") no-repeat scroll 0 0 transparent;
+}
+
+div#left_area div#clients div#clients_logos div#client_mtg:hover{
+    background: url("../images/clients/Client_MTG.png") no-repeat scroll 0 -121px transparent;
+}
+
+/* MTS 3 - 5 */
+div#left_area div#clients div#clients_logos div#client_mts{
+    top: 496px;
+    left: 306px;
+    background: url("../images/clients/Client_MTS.png") no-repeat scroll 0 0 transparent;
+}
+
+div#left_area div#clients div#clients_logos div#client_mts:hover{
+    background: url("../images/clients/Client_MTS.png") no-repeat scroll 0 -121px transparent;
+}
+
+/* NJA 4 - 1 */
+div#left_area div#clients div#clients_logos div#client_nja{
+    top: 0;
+    left: 459px;
+    background: url("../images/clients/Client_NJA.png") no-repeat scroll 0 0 transparent;
+}
+
+div#left_area div#clients div#clients_logos div#client_nja:hover{
+    background: url("../images/clients/Client_NJA.png") no-repeat scroll 0 -121px transparent;
+}
+
+/* NTG 4 - 2 */
+div#left_area div#clients div#clients_logos div#client_ntg{
+    top: 124px;
+    left: 459px;
+    background: url("../images/clients/Client_NTG.png") no-repeat scroll 0 0 transparent;
+}
+
+div#left_area div#clients div#clients_logos div#client_ntg:hover{
+    background: url("../images/clients/Client_NTG.png") no-repeat scroll 0 -121px transparent;
+}
+
+/* ONV 4 - 3 */
+div#left_area div#clients div#clients_logos div#client_onv{
+    top: 248px;
+    left: 459px;
+    background: url("../images/clients/Client_ONV.png") no-repeat scroll 0 0 transparent;
+}
+
+div#left_area div#clients div#clients_logos div#client_onv:hover{
+    background: url("../images/clients/Client_ONV.png") no-repeat scroll 0 -121px transparent;
+}
+
+/* PMA 4 - 4 */
+div#left_area div#clients div#clients_logos div#client_pma{
+    top: 372px;
+    left: 459px;
+    background: url("../images/clients/Client_PMA.png") no-repeat scroll 0 0 transparent;
+}
+
+div#left_area div#clients div#clients_logos div#client_pma:hover{
+    background: url("../images/clients/Client_PMA.png") no-repeat scroll 0 -121px transparent;
+}
+
+/* PMA 4 - 5 */
+div#left_area div#clients div#clients_logos div#client_wps{
+    top: 496px;
+    left: 459px;
+    background: url("../images/clients/Client_WPS.png") no-repeat scroll 0 0 transparent;
+}
+
+div#left_area div#clients div#clients_logos div#client_wps:hover{
+    background: url("../images/clients/Client_WPS.png") no-repeat scroll 0 -121px transparent;
+}

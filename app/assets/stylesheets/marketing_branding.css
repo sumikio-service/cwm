@@ -19,6 +19,9 @@ div#left_area div#marketing_branding div.banner_area{
 
 div#left_area div#marketing_branding div.banner_area div.main_banner{
     float: left;
+    width: 430px;
+    height: 170px;
+    overflow: hidden;
 }
 
 div#left_area div#marketing_branding div.banner_area div.main_banner img{

@@ -1,28 +1,43 @@
-Cwm.Views.Gm = Backbone.View.extend({
-    initialize: function(action){
-        _.bindAll(this);
-        this.page = action;
-        this.set_default();
-    },
-    set_default: function(){
-        if( $('.selected').parent('li').attr('id') == "gm_sub_complete_brand_experience" ){
-            $('#gm_sub_complete_brand_experience').show();
-        }
-        if( $('.selected').parent('li').attr('id') == "gm_sub_clients" ){
-            $('#gm_sub_clients').show();
-        }
+(function() {
+    var __hasProp = Object.prototype.hasOwnProperty, __extends = function(child, parent) {
+        for (var key in parent) { if (__hasProp.call(parent, key)) child[key] = parent[key]; }
+        function ctor() { this.constructor = child; }
+        ctor.prototype = parent.prototype;
+        child.prototype = new ctor;
+        child.__super__ = parent.prototype;
+        return child;
+    };
     
-        $('#gm_marketing_branding')
-        .bind('mouseover', function(){
+      
+    Cwm.Views.Gm = Backbone.View.extend({
+        el: function(){return $('#gm_area')},
+        initialize: function(action){
+            _.bindAll(this);
+            this.page = action;
+            this.set_default();
+        },
+        events: {
+            "mouseover #gm_marketing_branding": "open_complete_brand_experience",
+            "mouseover #gm_about": "open_clients",
+            "mouseover .gm_main_menu" : "close_submenu",
+            "mouseleave ul#gm": "gm_leave"
+        },
+        set_default: function(){
+            if( this.page == "complete_brand_experience" ){
+                $('#gm_sub_complete_brand_experience').show();
+            }
+            if( this.page == "clients" ){
+                $('#gm_sub_clients').show();
+            }
+            
+        },
+        open_complete_brand_experience: function(){
             $('#gm_sub_complete_brand_experience').slideDown();
-        })
-    
-        $('#gm_about')
-        .bind('mouseover', function(){
+        },
+        open_clients: function(){
             $('#gm_sub_clients').slideDown();
-        })
-    
-        $('.gm_main_menu').bind('mouseover', function(attr){
+        },
+        close_submenu: function(attr){
             var mouse_over_id = $(attr.target).parent().attr('id')
             if( mouse_over_id != 'gm_marketing_branding' ){
                 $('#gm_sub_complete_brand_experience').slideUp();
@@ -30,12 +45,21 @@ Cwm.Views.Gm = Backbone.View.extend({
             if( mouse_over_id != 'gm_about' ){
                 $('#gm_sub_clients').slideUp();
             }
-        })
+        },
+        gm_leave: function(){
+            var view = this;
+            setTimeout(function(){                
+                if( view.page == "complete_brand_experience" ){
+                    $('#gm_sub_clients').slideUp();
+                    $('#gm_sub_complete_brand_experience').slideDown();
+                }
+                if( view.page == "clients" ){
+                    $('#gm_sub_complete_brand_experience').slideUp();
+                    $('#gm_sub_clients').slideDown();
+                }
+            }, 100)
+        }
         
-        $('ul#gm').bind('mouseleave', function(attr){
-            $('#gm_sub_complete_brand_experience').slideUp();
-            $('#gm_sub_clients').slideUp();
-        })
-    }
-    
-})
+    })
+
+}).call(this);

@@ -1,0 +1,47 @@
+
+div#left_area{
+    
+    div#marketing_branding{
+        margin-top: 80px;
+        
+        h2{
+            margin:0;
+            padding:0;
+        }
+
+        div.banner_area{
+            margin-top: 35px;
+            
+            div.main_banner{
+                float: left;
+                width: 430px;
+                height: 170px;
+                overflow: hidden;
+            }
+            
+            div.main_banner img{
+                width: 430px;
+                height: 170px;
+            }
+            
+            div.sub_banner{
+                float: right;
+                text-align: right;
+                margin-right: 60px;
+                background-color: #f0f0f0;
+                width: 150px;
+                height: 100px;
+                padding-top: 70px;
+                padding-right: 20px;
+                color: #666666;
+            }
+
+        }
+
+        div#marketing{
+            margin-top: 50px;
+        }
+    }
+    
+}
+

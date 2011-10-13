@@ -1,6 +1,7 @@
 source 'http://rubygems.org'
 
 gem 'rails', '3.1.0'
+gem "rails-backbone"
 
 # Bundle edge Rails instead:
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
@@ -36,3 +37,5 @@ group :test do
   # Pretty printed test output
   gem 'turn', :require => false
 end
+
+#bundle install --without production

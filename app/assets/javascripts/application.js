@@ -6,10 +6,16 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require underscore
+//= require backbone
+//= require backbone_rails_sync
+//= require backbone_datalink
+//= require backbone/cwm
 //= require_tree .
 
 
 $(function(){
+
 
     if( $('.selected').parent('li').attr('id') == "gm_sub_complete_brand_experience" ){
         $('#gm_sub_complete_brand_experience').show();

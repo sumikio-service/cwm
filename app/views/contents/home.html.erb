@@ -1,3 +1,12 @@
+<script type="text/javascript">
+  $(function() {
+    // Blog is the app name
+    window.router = new Cwm.Routers.HomesRouter('<%= h params[:action] %>');
+    Backbone.history.start();
+  });
+</script>
+
+
 <div id="home">
            <div id="main_video">
               

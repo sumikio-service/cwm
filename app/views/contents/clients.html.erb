@@ -1,3 +1,10 @@
+<script type="text/javascript">
+  $(function() {
+    // Blog is the app name
+    window.router = new Cwm.Routers.ClientsRouter('<%= h params[:action] %>');
+    Backbone.history.start();
+  });
+</script>
 
 <div id="clients">
   <h2><img src="images/clients/about_clients.png" alt="marketing and branding" /></h2>

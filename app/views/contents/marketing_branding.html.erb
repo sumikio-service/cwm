@@ -1,3 +1,10 @@
+<script type="text/javascript">
+  $(function() {
+    // Blog is the app name
+    window.router = new Cwm.Routers.MarketingBrandingsRouter('<%= h params[:action] %>');
+    Backbone.history.start();
+  });
+</script>
 
 
 <div id="marketing_branding">

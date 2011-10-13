@@ -13,6 +13,10 @@ a:visited { color: #b8b8b8; text-decoration: none; }
 a:hover   { color: #b8b8b8; text-decoration: none; }
 a:active  {  }
 
+h1, h2, h3, h4, ul, p{
+    margin:0;
+    padding:0;
+}
 
 img{
     border: none;
@@ -41,8 +45,6 @@ body{
 
 .article1 h3{
     font-weight: normal;
-    margin:0;
-    padding:0;
 }
 
 .article1 p{
@@ -53,7 +55,9 @@ body{
 }
 
 .article1 ul{
-    
+    margin-left: 20px;
+    margin-top: 15px;
+    margin-bottom: 20px;
 }
 
 .article1 ul li{
@@ -70,7 +74,7 @@ body#marketing_branding{
 }
 
 body#complete_brand_experience{
-    background: url("../images/CWM_web_complete_brand_experience.jpg") no-repeat center 30px;
+    //background: url("../images/CWM_web_complete_brand_experience.jpg") no-repeat center 30px;
 }
 
 body#media_production{

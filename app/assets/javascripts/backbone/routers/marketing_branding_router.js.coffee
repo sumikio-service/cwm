@@ -10,8 +10,8 @@ class Cwm.Routers.MarketingBrandingsRouter extends Backbone.Router
     $('#slides').slides 
       preload: true
       preloadImage: 'img/loading.gif'
-      play: 5000
-      pause: 2500
+      play: 2500
+      pause: 1500
       hoverPause: true
   
   

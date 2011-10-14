@@ -1,0 +1,54 @@
+
+div#left_area{
+
+    div#media_production{
+        
+        height: 1000px;
+        
+        h2{
+            margin-top: 80px;
+        }
+        
+        div.banner_area{
+            margin-top: 40px;
+            overflow: hidden;
+            
+            div.main_banner{
+                float: left;
+                width: 618px;
+                height: 185px;
+                overflow: hidden;
+            }
+            
+            div.main_banner img{
+                width: 618px;
+                height: 185px;
+            }
+            
+        }
+    
+        div#video_production{
+            margin-top: 40px;            
+        }
+        
+        div#work_sample_videos{
+            margin-top: 5px;
+        
+            div.sample_video{
+                float:left;
+                width: 190px;
+                background: #F3F3F3;
+                height: 150px;
+                margin-right: 10px;
+                border: 3px solid #E0E0DE;
+            }
+        }
+        
+    
+
+        
+    }
+    
+}
+
+

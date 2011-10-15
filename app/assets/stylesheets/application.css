@@ -82,7 +82,7 @@ body#media_production{
 }
 
 body#about{
-    background: url("../images/CWM_web_about.jpg") no-repeat center 30px;
+    //background: url("../images/CWM_web_about.jpg") no-repeat center 30px;
 }
 
 body#clients{
@@ -108,7 +108,7 @@ div#wrapper{
 div#right_area{
     float: right;
     width: 255px;
-    min-height: 850px;
+    min-height: 1050px;
     background: url("../images/bg_right.gif") no-repeat scroll left bottom transparent;
     background: white;
 }

@@ -15,6 +15,14 @@
 </head>
 <body id="<%= params[:action] %>">
 
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 
 <div id="wrapper">
     <div id="contents">
@@ -74,9 +82,7 @@
             <div id="cwm_ad_area"><a href="#"><img src="images/img_slide.gif" alt="Complete Brand Experience" /></a></div>
             <div id="blog_area"><a href="#"><img src="images/img_blog.gif" alt="Blog" /></a></div>
             <div id="sns_area">
-                <img src="images/img_small_logo.gif" alt="Blog" />
-                <span>Follow "Crosswater Media" on Facebook</span>
-            </div>
+              <div class="fb-like-box" data-href="http://www.facebook.com/pages/Crosswater-Media/148179838535070" data-width="256px" data-show-faces="true" data-stream="false" data-header="false"></div>            </div>
         </div>
         <div id="left_area">
           <%= yield %>

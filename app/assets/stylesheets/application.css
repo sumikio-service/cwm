@@ -241,26 +241,10 @@ div#right_area div#blog_area{
 }
 
 div#right_area div#sns_area{
-    margin-top: 25px;
-    width: 256px;
-    height: 78px;
-    border: 1px solid #EDEDED;
-    padding:0;
-}
-
-div#right_area div#sns_area img{
-    margin-top: 20px;
-    margin-left: 10px;
-    float: left;
-}
-
-div#right_area div#sns_area span{
-    float: left;
-    margin-top: 20px;
-    margin-left: 5px;
-    padding:0;
-    font-size: 60%;
-    color: #3B5998;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    padding:5px 0;
 }
 
 div#left_area{

@@ -1,0 +1,39 @@
+              <!-- Start of Brightcove Player -->
+              
+              <div style="display:none">
+              
+              </div>
+              
+              <!--
+              By use of this code snippet, I agree to the Brightcove Publisher T and C 
+              found at https://accounts.brightcove.com/en/terms-and-conditions/. 
+              -->
+              
+              <script language="JavaScript" type="text/javascript" src="http://admin.brightcove.com/js/BrightcoveExperiences.js"></script>
+              
+              <object id="myExperience" class="BrightcoveExperience">
+                <param name="bgcolor" value="#FFFFFF" />
+                <param name="width" value="<%= width %>" />
+                <param name="height" value="<%= height %>" />
+                <% if auto_play -%>
+                <param name="playerID" value="1118567465001" />
+                <% else -%>
+                <param name="playerID" value="1074314317001" />
+                <% end -%>
+                <param name="playerKey" value="AQ~~,AAAA-kT3FyE~,jKt4cDeDK0VN2MX0QOCuPw61nq0iqpVy" />
+                <param name="isVid" value="true" />
+                <param name="isUI" value="true" />
+                <param name="dynamicStreaming" value="true" />
+              　<param name="@videoPlayer" value="<%= video_id %>" />
+                <param name="includeAPI" value="true" /> 
+                <param name="templateLoadHandler" value="<%= template_load_handler %>" />
+              </object>
+              
+              <!-- 
+              This script tag will cause the Brightcove Players defined above it to be created as soon
+              as the line is read by the browser. If you wish to have the player instantiated only after
+              the rest of the HTML is processed and the page load is complete, remove the line.
+              -->
+              <script type="text/javascript">brightcove.createExperiences();</script>
+              
+              <!-- End of Brightcove Player -->

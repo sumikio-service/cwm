@@ -130,6 +130,7 @@ div#right_area div#gm_area ul#gm{
     padding:0;
     top:0;
     right:0;
+    border-left: 1px solid #d5d5d5;
     
 }
 

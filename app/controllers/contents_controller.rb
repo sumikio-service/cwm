@@ -30,4 +30,8 @@ class ContentsController < ApplicationController
 
   end
 
+  def blog
+    
+  end
+
 end

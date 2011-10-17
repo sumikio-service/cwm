@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Komodo Project File - DO NOT EDIT -->
 <project id="1dc00d05-0335-b847-b97f-2afe27a657dc" kpf_version="4" name="cwm.kpf">
+<livefolder id="1dc00d05-0335-b847-b97f-2afe27a657dc/app/assets/javascripts/backbone/templates/routers" idref="1dc00d05-0335-b847-b97f-2afe27a657dc/app/assets/javascripts/backbone/templates" name="routers" url="app/assets/javascripts/backbone/routers">
+</livefolder>
 <preference-set idref="1dc00d05-0335-b847-b97f-2afe27a657dc">
   <boolean id="import_live">1</boolean>
 </preference-set>

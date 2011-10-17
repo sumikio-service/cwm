@@ -6,3 +6,28 @@
   });
 </script>
 
+<div id="contact">
+  
+  <h2><img src="images/contact/contact.png" alt="contact" /></h2>
+  
+  <p>Something catch your fancy? We want to hear from you.</p>
+  <div id="inquiry_area">
+    <div class="wrapper">
+      
+      <label>First Name</label>
+      <%= text_field_tag "first_name" %>
+      
+      <label>Last Name</label>
+      <%= text_field_tag "last_name" %>
+      
+      <label>Email</label>
+      <%= text_field_tag "email" %>
+        
+      <label>Message</label>
+      <%= text_area_tag "message" %>
+        
+      <div class="submit_tag"><a href="#">submit</a></div>
+        
+    </div>
+  </div>
+</div>

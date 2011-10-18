@@ -13,7 +13,7 @@ a:visited { color: #b8b8b8; text-decoration: none; }
 a:hover   { color: #b8b8b8; text-decoration: none; }
 a:active  {  }
 
-h1, h2, h3, h4, ul, p{
+h1, h2, h3, h4, ul, p, dl, dd{
     margin:0;
     padding:0;
 }
@@ -95,6 +95,10 @@ body#inspiration{
 
 body#contact{
     //background: url("../images/CWM_web_contact.jpg") no-repeat center 30px;
+}
+
+body#blog{
+    //background: url("../images/CWM_web_blog.jpg") no-repeat center 30px;
 }
 
 div#wrapper{

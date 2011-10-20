@@ -15,17 +15,29 @@
       
       <label>First Name</label>
       <%= text_field_tag "first_name" %>
+      <div id="error_first_name" class="error_text"></div>
       
       <label>Last Name</label>
       <%= text_field_tag "last_name" %>
+      <div id="error_last_name" class="error_text"></div>
       
       <label>Email</label>
       <%= text_field_tag "email" %>
-        
+      <div id="error_email" class="error_text"></div>
+      
       <label>Message</label>
       <%= text_area_tag "message" %>
+      <div id="error_message" class="error_text"></div>
         
+      <div class="ajax_loader"><img alt="Ajax Loader" src="/images/ajax-loader.gif"></div>
       <div class="submit_tag"><a href="#">submit</a></div>
+      <div class="result_area">
+        <div class="result">
+          <p>We receive your message.</p>
+          <p>We will get back to you as soon as possible.</p>
+        </div>
+      </div>
+
         
     </div>
   </div>

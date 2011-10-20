@@ -30,6 +30,11 @@ class ContentsController < ApplicationController
 
   end
 
+  def contact_send
+    sleep 2
+    render :text => "OK"
+  end
+
   def blog
     
   end

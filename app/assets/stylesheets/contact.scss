@@ -35,6 +35,13 @@ div#left_area{
                     font-size: 90%;
                 }
                 
+                div.error_text{
+                    color: red;
+                    font-size: 80%;
+                    margin-left: 15px;
+                    height: 1em;
+                }
+                
                 input{
                     margin-left: 15px;
                     width: 280px;
@@ -72,6 +79,31 @@ div#left_area{
                     
                 }
                 
+                div.ajax_loader{
+                    position: absolute;
+                    bottom: 15px;
+                    right: 130px;
+                    display: none;
+                }
+                
+                div.result_area{
+                    
+                    position: absolute;
+                    right: 30px;
+                    top: 40px;
+                    
+                    div.result{
+                        display: none;
+                        width: 200px;
+                        height: 200px;
+                        background: #EEEEEE;
+                        padding: 10px;
+                        border: 1px solid #888888;
+                        font-size: 70%;
+                    }
+                }
+                
+
                 
                 
             }

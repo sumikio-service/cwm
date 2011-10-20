@@ -16,6 +16,8 @@ Cwm::Application.routes.draw do
   get "contents/inspiration"
 
   get "contents/contact"
+  
+  post "contents/contact_send"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

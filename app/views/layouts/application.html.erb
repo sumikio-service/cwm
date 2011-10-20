@@ -76,7 +76,11 @@
                 <li id="gm_inspiration" class="gm_main_menu"><a href="/inspiration">Inspiration</a></li>
               <% end -%>
               
+              <% if params[:action] == "contact" -%>
+                <li id="gm_contact" class="gm_main_menu"><a href="/contact" class="selected">Contact</a></li>
+              <% else -%>
                 <li id="gm_contact" class="gm_main_menu"><a href="/contact">Contact</a></li>
+              <% end -%>
             </ul>
             </div>
             <div id="cwm_ad_area"><a href="#"><img src="images/img_slide.gif" alt="Complete Brand Experience" /></a></div>
@@ -91,12 +95,12 @@
         <div id="footer">
             <div id="ft_company">©2011 Crosswater Media</div>
             <ul id="ft_menu">
-                <li class="first"><a href="/" class="selected">HOME</a></li>
-                <li><a href="/marketing_branding">MARKETING & BRANDING</a></li>
-                <li><a href="/media_production">MEDIA PRODUCTION</a></li>
-                <li><a href="/about">ABOUT</a></li>
-                <li><a href="/inspiration">INSPIRATION</a></li>
-                <li><a href="/contact">CONTACT</a></li>
+                <li class="first"><a href="/" class="<%= "selected" if params[:action] == "home" %>">HOME</a></li>
+                <li><a href="/marketing_branding" class="<%= "selected" if params[:action] == "marketing_branding" or params[:action] == "complete_brand_experience" %>">MARKETING & BRANDING</a></li>
+                <li><a href="/media_production" class="<%= "selected" if params[:action] == "media_production" %>">MEDIA PRODUCTION</a></li>
+                <li><a href="/about" class="<%= "selected" if params[:action] == "about" or params[:action] == "clients" %>">ABOUT</a></li>
+                <li><a href="/inspiration" class="<%= "selected" if params[:action] == "inspiration" %>">INSPIRATION</a></li>
+                <li><a href="/contact" class="<%= "selected" if params[:action] == "contact" %>">CONTACT</a></li>
             </ul>
         </div>
     </div>

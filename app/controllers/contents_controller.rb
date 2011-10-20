@@ -32,6 +32,7 @@ class ContentsController < ApplicationController
 
   def contact_send
     sleep 2
+    #Notifications.contact_email().deliver
     render :text => "OK"
   end
 

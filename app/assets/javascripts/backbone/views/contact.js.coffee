@@ -16,7 +16,12 @@ class Cwm.Views.Contact extends Backbone.View
         false
 
     submit: ->
-        if ! ( @validation_first_name() || @validation_last_name() || @validation_email() || @validation_message() )
+        result_first_name = @validation_first_name()
+        result_last_name = @validation_last_name()
+        result_email = @validation_email()
+        result_message = @validation_message()
+    
+        if ! ( result_first_name || result_last_name || result_email || result_message )
             @show_ajax()
             view = @
             $('div.result').slideUp();

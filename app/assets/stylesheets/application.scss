@@ -1,0 +1,347 @@
+/*
+ * This is a manifest file that'll automatically include all the stylesheets available in this directory
+ * and any sub-directories. You're free to add application-wide styles to this file and they'll appear at
+ * the top of the compiled file, but it's generally better to create a new file per style scope.
+ *= require_self
+ *= require_tree .
+*/
+
+/* Application Style */
+
+a:link    { color: #b8b8b8; text-decoration: none; }
+a:visited { color: #b8b8b8; text-decoration: none; }
+a:hover   { color: #b8b8b8; text-decoration: none; }
+a:active  {  }
+
+h1, h2, h3, h4, ul, p, dl, dd{
+    margin:0;
+    padding:0;
+}
+
+img{
+    border: none;
+}
+
+html{
+    height: 100%;
+    width: 100%;
+}
+body{
+    height: 100%;
+    width: 100%;
+    margin:0;
+    padding:0;
+    
+    font-family: 'Verdana', 'Arial', 'Tahoma', sans-serif
+}
+
+.clear{
+    clear: both;
+}
+
+.article1{
+    
+}
+
+.article1 h3{
+    font-weight: normal;
+}
+
+.article1 p{
+    margin-top: 15px;
+    color: #989898;
+    font-size: 70%;
+    margin-right: 70px;
+}
+
+.article1 ul{
+    margin-left: 20px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.article1 ul li{
+    color: #989898;
+    font-size: 70%;
+}
+
+/* Main Layout */
+
+
+
+body#marketing_branding{
+    //background: url("../images/CWM_web_marketing_branding.jpg") no-repeat center 30px;
+}
+
+body#complete_brand_experience{
+    //background: url("../images/CWM_web_complete_brand_experience.jpg") no-repeat center 30px;
+}
+
+body#media_production{
+    //background: url("../images/CWM_web_media_production.jpg") no-repeat center 30px;
+}
+
+body#about{
+    //background: url("../images/CWM_web_about.jpg") no-repeat center 30px;
+}
+
+body#clients{
+    //background: url("../images/CWM_web_clients.jpg") no-repeat center 30px;
+}
+
+body#inspiration{
+    background: url("../images/CWM_web_inspiration.jpg") no-repeat center 30px;
+}
+
+body#contact{
+    //background: url("../images/CWM_web_contact.jpg") no-repeat center 30px;
+}
+
+body#blog{
+    //background: url("../images/CWM_web_blog.jpg") no-repeat center 30px;
+}
+
+div#wrapper{
+    position: relative;
+    height: auto !important;
+    margin: 0 auto;
+    min-height: 100%;
+    width: 100%;
+    
+}
+div#right_area{
+    float: right;
+    width: 255px;
+    min-height: 1050px;
+    background: url("../images/bg_right.gif") no-repeat scroll left bottom transparent;
+    background: white;
+    
+    div#menu_box{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        height: 380px;
+        overflow: hidden;
+        border-left: 1px dashed #d5d5d5;
+        
+        h1{
+            text-align: right;
+            padding:0;
+            margin-bottom:0;
+        }
+        
+        div#gm_area{
+        
+          ul#gm{
+              margin-top:5px;
+              padding:0;
+              top:0;
+              right:0;
+              
+             li{
+                 text-indent: -9999px;
+                 margin:0;
+                 padding:0;
+                 list-style: none;
+             }
+             
+             li.gm_sub_menu{
+                 display: none;
+             }
+             
+             li a{
+                 display: block;
+                 height: 34px;
+             }
+             
+             li#gm_home a{
+                 background: url("../images/gm_home.png") no-repeat scroll 0 0 transparent;
+             }
+             li#gm_home a.selected{
+                 background: url("../images/gm_home.png") no-repeat scroll 0 -70px transparent;
+             }
+             li#gm_home a:hover{
+                 background: url("../images/gm_home.png") no-repeat scroll 0 -35px transparent;
+             }
+             
+             li#gm_marketing_branding a{
+                 background: url("../images/gm_m&b.png") no-repeat scroll 0 0 transparent;
+             }
+             li#gm_marketing_branding a.selected{
+                 background: url("../images/gm_m&b.png") no-repeat scroll 0 -70px transparent;
+             }
+             li#gm_marketing_branding a:hover{
+                 background: url("../images/gm_m&b.png") no-repeat scroll 0 -35px transparent;
+             }
+             
+             li#gm_sub_complete_brand_experience a{
+                 background: url("../images/gm_m&b_cbe.png") no-repeat scroll 0 0 transparent;
+             }
+             li#gm_sub_complete_brand_experience a.selected{
+                 background: url("../images/gm_m&b_cbe.png") no-repeat scroll 0 -70px transparent;
+             }
+             li#gm_sub_complete_brand_experience a:hover{
+                 background: url("../images/gm_m&b_cbe.png") no-repeat scroll 0 -35px transparent;
+             }
+             
+             li#gm_media_production a{
+                 background: url("../images/gm_mp.png") no-repeat scroll 0 0 transparent;
+             }
+             li#gm_media_production a.selected{
+                 background: url("../images/gm_mp.png") no-repeat scroll 0 -70px transparent;
+             }
+             li#gm_media_production a:hover{
+                 background: url("../images/gm_mp.png") no-repeat scroll 0 -35px transparent;
+             }
+             
+             li#gm_about a{
+                 background: url("../images/gm_about.png") no-repeat scroll 0 0 transparent;
+             }
+         
+             li#gm_about a.selected{
+                 background: url("../images/gm_about.png") no-repeat scroll 0 -70px transparent;
+             }
+             li#gm_about a:hover{
+                 background: url("../images/gm_about.png") no-repeat scroll 0 -35px transparent;
+             }
+             
+             li#gm_sub_clients a{
+                 background: url("../images/gm_about_clients.png") no-repeat scroll 0 0 transparent;
+             }
+             li#gm_sub_clients a.selected{
+                 background: url("../images/gm_about_clients.png") no-repeat scroll 0 -70px transparent;
+             }
+             li#gm_sub_clients a:hover{
+                 background: url("../images/gm_about_clients.png") no-repeat scroll 0 -35px transparent;
+             }
+             
+             li#gm_inspiration a{
+                 background: url("../images/gm_inspiration.png") no-repeat scroll 0 0 transparent;
+             }
+             li#gm_inspiration a.selected{
+                 background: url("../images/gm_inspiration.png") no-repeat scroll 0 -70px transparent;
+             }
+             li#gm_inspiration a:hover{
+                 background: url("../images/gm_inspiration.png") no-repeat scroll 0 -35px transparent;
+             }
+             
+             li#gm_contact a{
+                 background: url("../images/gm_contact.png") no-repeat scroll 0 0 transparent;
+             }
+             li#gm_contact a.selected{
+                 background: url("../images/gm_contact.png") no-repeat scroll 0 -70px transparent;
+             }
+             li#gm_contact a:hover{
+                 background: url("../images/gm_contact.png") no-repeat scroll 0 -35px transparent;
+             }
+             
+          }
+          
+        }
+        
+    }
+    
+    div#cwm_ad_area{
+        width: 256px;
+        height: 168px;
+        overflow: hidden;
+    }
+    
+    div#blog_area{
+        margin-top: 25px;
+        width: 256px;
+        height: 78px;
+        
+        a{
+            display: block;
+            height: 75px;
+            background: url("../images/img_blog.png") no-repeat scroll 0 0 transparent;
+        }
+        
+        a.selected{
+            background: url("../images/img_blog.png") no-repeat scroll 0 -150px transparent;
+        }
+        
+        a:hover{
+            background: url("../images/img_blog.png") no-repeat scroll 0 -75px transparent;
+        }
+    }
+    
+    div#sns_area{
+        margin-top: 15px;
+        margin-left: auto;
+        margin-right: auto;
+        padding:5px 0;
+    }
+    
+}
+
+
+
+
+
+
+div#left_area{
+    float: left;
+    width: 666px;
+}
+
+
+div#contents{
+    width: 924px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom:100px;
+}
+
+
+div#footer{
+    position: absolute;
+    bottom: 0;
+    width: 924px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    border-top: 1px solid #d5d5d5;
+    color: #b8b8b8;
+    background: white;
+    
+    div#ft_company{
+        margin-top: 4px;
+        margin-left: 2px;
+        font-size: 65%;
+        float: left;
+    }
+    ul#ft_menu{
+        float: left;
+        margin-top:4px;
+        margin-bottom: 0;
+        margin-left: 70px;
+        padding:0;
+        
+        li{
+            float: left;
+            list-style: none;
+            padding-left: 20px;
+            padding-right: 20px;
+            font-size: 65%;
+            border-left: 1px solid #b8b8b8;
+            
+            a{
+                color: #b8b8b8;
+            }
+            a:hover{
+                color: #333333;
+            }
+            a.selected{
+                color: #333333;
+            }
+            
+        }
+        li.first{
+            border: none;
+        }
+    }
+}
+
+
+

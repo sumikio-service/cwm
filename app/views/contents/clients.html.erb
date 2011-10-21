@@ -8,7 +8,14 @@
 <div id="clients">
   <h2><img src="images/clients/about_clients.png" alt="about clients" /></h2>
   <p class="clients_exp">Our clients are companies that understand the value of marketing and the importance of rich media content. Clients range from entrepreneurs and start-ups to medium-size corporations and non-profits across many industries. Whether B2C or B2B, we are always inspired by our clients’ unique stories and love to help them spread their message.</p>
-  <div class="tmp"></div>
+  
+  <div id="client_video">
+  <!--  1219126929001 1219126951001 1219252727001 -->
+  <%= render :partial => "player_brightcove", :locals => { :video_id => "1219126929001", :width => "600", :height => "338", :template_load_handler => "", :auto_play => false } %>
+  </div>
+  
+  
+  
   <div id="clients_logos">
     <div id="client_aci" class="clientlogo">ACI</div>
     <div id="client_atc" class="clientlogo">ATC</div>

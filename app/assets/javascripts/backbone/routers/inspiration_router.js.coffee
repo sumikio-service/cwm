@@ -7,3 +7,4 @@ class Cwm.Routers.InspirationsRouter extends Backbone.Router
     
   top: ->
     new Cwm.Views.Gm( @page )
+    Cwm.common_init()

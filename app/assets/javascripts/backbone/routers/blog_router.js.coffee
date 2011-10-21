@@ -6,4 +6,5 @@ class Cwm.Routers.BlogRouter extends Backbone.Router
     { "": "top" }
     
   top: ->
-    /*new Cwm.Views.Gm( @page )*/
+    new Cwm.Views.Gm( @page )
+    Cwm.common_init()

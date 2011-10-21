@@ -9,3 +9,10 @@ window.Cwm =
   Collections: {}
   Routers: {}
   Views: {}
+  common_init: ->
+    $('div#cwm_ad_area').slides 
+      preload: true
+      play: 4000
+      pause: 4000
+      hoverPause: false
+    

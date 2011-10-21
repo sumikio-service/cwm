@@ -27,66 +27,105 @@
 <div id="wrapper">
     <div id="contents">
         <div id="right_area">
-            <h1>
-              <a href="#">
-                <img src="images/logo.png" alt="crosswater media" />
-              </a>
-            </h1>
-            <div id="gm_area">
-            <ul id="gm">
-              <% if params[:action] == "home" -%>
-                <li id="gm_home" class="gm_main_menu"><a href="/home" class="selected">Home</a></li>
-              <% else -%>
-                <li id="gm_home" class="gm_main_menu"><a href="/home">Home</a></li>
-              <% end -%>
-              
-              <% if params[:action] == "marketing_branding" -%>
-                <li id="gm_marketing_branding" class="gm_main_menu selected"><a href="/marketing_branding" class="selected" >Marketing and Branding</a></li>
-              <% else -%>
-                <li id="gm_marketing_branding" class="gm_main_menu"><a href="/marketing_branding"  >Marketing and Branding</a></li>
-              <% end -%>
-              
-              <% if params[:action] == "complete_brand_experience" -%>
-                <li id="gm_sub_complete_brand_experience" class="gm_sub_menu"><a href="/complete_brand_experience" class="selected" >Marketing and Branding</a></li>
-              <% else -%>
-                <li id="gm_sub_complete_brand_experience" class="gm_sub_menu"><a href="/complete_brand_experience">Marketing and Branding</a></li>
-              <% end -%>
-              
-              <% if params[:action] == "media_production" -%>
-                <li id="gm_media_production" class="gm_main_menu"><a href="/media_production" class="selected">Media Production</a></li>
-              <% else -%>
-                <li id="gm_media_production" class="gm_main_menu"><a href="/media_production">Media Production</a></li>
-              <% end -%>
-              
-              <% if params[:action] == "about" -%>
-                <li id="gm_about" class="gm_main_menu"><a href="/about" class="selected">About</a></li>
-              <% else -%>
-                <li id="gm_about" class="gm_main_menu"><a href="/about">About</a></li>
-              <% end -%>
-              
-              <% if params[:action] == "clients" -%>
-                <li id="gm_sub_clients" class="gm_sub_menu"><a href="/clients" class="selected">Clients</a></li>
-              <% else -%>
-                <li id="gm_sub_clients" class="gm_sub_menu"><a href="/clients">Clients</a></li>
-              <% end -%>
-              
-              <% if params[:action] == "inspiration" -%>
-                <li id="gm_inspiration" class="gm_main_menu"><a href="/inspiration" class="selected">Inspiration</a></li>
-              <% else -%>
-                <li id="gm_inspiration" class="gm_main_menu"><a href="/inspiration">Inspiration</a></li>
-              <% end -%>
-              
-              <% if params[:action] == "contact" -%>
-                <li id="gm_contact" class="gm_main_menu"><a href="/contact" class="selected">Contact</a></li>
-              <% else -%>
-                <li id="gm_contact" class="gm_main_menu"><a href="/contact">Contact</a></li>
-              <% end -%>
-            </ul>
+            <div id="menu_box">
+
+               <h1>
+                 <a href="#">
+                   <img src="images/logo.png" alt="crosswater media" />
+                 </a>
+               </h1>
+               <div id="gm_area">
+               <ul id="gm">
+                 <% if params[:action] == "home" -%>
+                   <li id="gm_home" class="gm_main_menu"><a href="/home" class="selected">Home</a></li>
+                 <% else -%>
+                   <li id="gm_home" class="gm_main_menu"><a href="/home">Home</a></li>
+                 <% end -%>
+                 
+                 <% if params[:action] == "marketing_branding" -%>
+                   <li id="gm_marketing_branding" class="gm_main_menu selected"><a href="/marketing_branding" class="selected" >Marketing and Branding</a></li>
+                 <% else -%>
+                   <li id="gm_marketing_branding" class="gm_main_menu"><a href="/marketing_branding"  >Marketing and Branding</a></li>
+                 <% end -%>
+                 
+                 <% if params[:action] == "complete_brand_experience" -%>
+                   <li id="gm_sub_complete_brand_experience" class="gm_sub_menu"><a href="/complete_brand_experience" class="selected" >Marketing and Branding</a></li>
+                 <% else -%>
+                   <li id="gm_sub_complete_brand_experience" class="gm_sub_menu"><a href="/complete_brand_experience">Marketing and Branding</a></li>
+                 <% end -%>
+                 
+                 <% if params[:action] == "media_production" -%>
+                   <li id="gm_media_production" class="gm_main_menu"><a href="/media_production" class="selected">Media Production</a></li>
+                 <% else -%>
+                   <li id="gm_media_production" class="gm_main_menu"><a href="/media_production">Media Production</a></li>
+                 <% end -%>
+                 
+                 <% if params[:action] == "about" -%>
+                   <li id="gm_about" class="gm_main_menu"><a href="/about" class="selected">About</a></li>
+                 <% else -%>
+                   <li id="gm_about" class="gm_main_menu"><a href="/about">About</a></li>
+                 <% end -%>
+                 
+                 <% if params[:action] == "clients" -%>
+                   <li id="gm_sub_clients" class="gm_sub_menu"><a href="/clients" class="selected">Clients</a></li>
+                 <% else -%>
+                   <li id="gm_sub_clients" class="gm_sub_menu"><a href="/clients">Clients</a></li>
+                 <% end -%>
+                 
+                 <% if params[:action] == "inspiration" -%>
+                   <li id="gm_inspiration" class="gm_main_menu"><a href="/inspiration" class="selected">Inspiration</a></li>
+                 <% else -%>
+                   <li id="gm_inspiration" class="gm_main_menu"><a href="/inspiration">Inspiration</a></li>
+                 <% end -%>
+                 
+                 <% if params[:action] == "contact" -%>
+                   <li id="gm_contact" class="gm_main_menu"><a href="/contact" class="selected">Contact</a></li>
+                 <% else -%>
+                   <li id="gm_contact" class="gm_main_menu"><a href="/contact">Contact</a></li>
+                 <% end -%>
+               </ul>
+               </div>
+               
             </div>
-            <div id="cwm_ad_area"><a href="#"><img src="images/img_slide.gif" alt="Complete Brand Experience" /></a></div>
-            <div id="blog_area"><a href="/blog"><img src="images/img_blog.gif" alt="Blog" /></a></div>
+ 
+            <div id="cwm_ad_area">
+              
+              <div class="slides_container">
+                <div>
+                    <img src="images/ads_banners/CWM_ab_1cbe.png" alt="Banners" />
+                </div>
+                <div>
+                    <img src="images/ads_banners/CWM_ab_2about.png" alt="Banners" />
+                </div>
+                <div>
+                    <img src="images/ads_banners/CWM_ab_3branding.png" alt="Banners" />
+                </div>
+                <div>
+                    <img src="images/ads_banners/CWM_ab_4inspiration.png" alt="Banners" />
+                </div>
+                <div>
+                    <img src="images/ads_banners/CWM_ab_5mediaproduction.png" alt="Banners" />
+                </div>
+                <div>
+                    <img src="images/ads_banners/CWM_ab_6blog.png" alt="Banners" />
+                </div>
+                <div>
+                    <img src="images/ads_banners/CWM_ab_7marketing.png" alt="Banners" />
+                </div>
+              </div>
+              
+            </div>
+            
+            <div id="blog_area">
+              <% if params[:action] == "blog" -%>
+              <a href="/blog" class="selected">Blog</a>
+              <% else -%>
+              <a href="/blog">Blog</a>
+              <% end -%>
+            </div>
             <div id="sns_area">
-              <div class="fb-like-box" data-href="http://www.facebook.com/pages/Crosswater-Media/148179838535070" data-width="256px" data-show-faces="true" data-stream="false" data-header="false"></div>            </div>
+              <div class="fb-like-box" data-href="http://www.facebook.com/pages/Crosswater-Media/148179838535070" data-width="256px" data-show-faces="true" data-stream="false" data-header="false"></div>
+            </div>
         </div>
         <div id="left_area">
           <%= yield %>

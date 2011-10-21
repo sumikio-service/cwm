@@ -9,10 +9,10 @@ div#left_area div#clients p.clients_exp{
     margin-right: 70px;
 }
 
-div#left_area div#clients div.tmp{
+div#left_area div#clients div#client_video{
     height: 340px;
     width: 600px;
-    background-color: #000000;
+    background-color: #FFFFFF;
     margin-top: 40px;
     
 }

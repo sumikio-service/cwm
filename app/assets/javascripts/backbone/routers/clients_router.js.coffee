@@ -7,3 +7,4 @@ class Cwm.Routers.ClientsRouter extends Backbone.Router
       
   clients: ->
     new Cwm.Views.Gm( @page )
+    Cwm.common_init()

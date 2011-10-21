@@ -9,8 +9,9 @@ class Cwm.Routers.MediaProductionsRouter extends Backbone.Router
     new Cwm.Views.Gm( @page )
     $('#slides').slides 
       preload: true
-      preloadImage: 'img/loading.gif'
-      play: 2500
-      pause: 1500
-      hoverPause: true
+      play: 4000
+      pause: 4000
+      hoverPause: false
+      
+    Cwm.common_init()
   

@@ -6,5 +6,6 @@ class Cwm.Routers.ContactsRouter extends Backbone.Router
     { "": "top" }
     
   top: ->
-    new Cwm.Views.Contact
     new Cwm.Views.Gm( @page )
+    new Cwm.Views.Contact
+    Cwm.common_init()

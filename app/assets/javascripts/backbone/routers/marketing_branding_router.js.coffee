@@ -7,11 +7,12 @@ class Cwm.Routers.MarketingBrandingsRouter extends Backbone.Router
 
   top: ->
     new Cwm.Views.Gm( @page )
+    Cwm.common_init()
     $('#slides').slides 
       preload: true
       preloadImage: 'img/loading.gif'
-      play: 2500
-      pause: 1500
+      play: 4000
+      pause: 4000
       hoverPause: true
   
   

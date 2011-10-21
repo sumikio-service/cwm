@@ -9,26 +9,26 @@ div#left_area{
             
             div.main_banner{
                 float: left;
-                width: 430px;
-                height: 170px;
+                width: 410px;
+                height: 150px;
                 overflow: hidden;
             }
             
             div.main_banner img{
-                width: 430px;
-                height: 170px;
+                width: 410px;
+                height: 150px;
             }
             
             div.sub_banner{
                 float: right;
-                text-align: right;
                 margin-right: 60px;
-                background-color: #f0f0f0;
                 width: 150px;
                 height: 100px;
                 padding-top: 70px;
                 padding-right: 20px;
                 color: #666666;
+                text-indent: -9999px;
+                background: url("/images/marketing_branding/CBE_page_button.png") no-repeat scroll left top transparent;
             }
             
         }

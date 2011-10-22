@@ -242,8 +242,14 @@ div#right_area{
     
     div#cwm_ad_area{
         width: 256px;
-        height: 168px;
+        height: 172px;
         overflow: hidden;
+        
+        div#cwm_ads{
+         width: 256px;
+         height: 172px;
+        }
+        
     }
     
     div#blog_area{

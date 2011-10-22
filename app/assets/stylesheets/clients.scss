@@ -1,0 +1,311 @@
+
+div#left_area div#clients{
+    margin-top: 80px;
+    
+    p.clients_exp{
+        color: #222222;
+        font-size: 70%;
+        margin-right: 70px;
+    }
+    
+    div.testimonials{
+        margin-top: 45px;
+        font-size: 90%;
+    }
+    
+    div#client_video{
+        height: 340px;
+        width: 600px;
+        margin-top: 5px;
+        background-color: #FFFFFF;
+        
+    }
+    
+    div#video_menu{
+        overflow: hidden;
+        margin-top: 20px;
+        
+        div.video_title{
+            float: left;
+            width: 200px;
+            height: 120px;
+            margin-right: 3px;
+            border: 1px solid #E4E5E7;
+            
+            div.thumbnail{
+                margin-top: 15px;
+                margin-left: auto;
+                margin-right: auto;
+                width: 124px;
+                height: 70px;
+                background: #000000;
+            }
+            
+            div.name{
+                font-size: 75%;
+                text-align: center;
+            }
+            
+            div.title{
+                font-size: 65%;
+                text-align: center;
+            }
+            
+        }
+    
+        a:link    { color: #222222; text-decoration: none; }
+        a:visited { color: #222222; text-decoration: none; }
+        a:hover   { color: #222222; text-decoration: none; }
+        a:active  {  }
+            
+    }
+    
+    p#recent{
+        margin-top: 35px;
+        font-size: 70%;
+    }
+    
+    div#clients_logos{
+        margin-top: 15px;
+        position: relative;
+        height: 640px;
+        width: 610px;
+        
+        
+        div.clientlogo{
+            width: 150px;
+            height: 121px;
+            position: absolute;
+            text-indent: -9999px;
+            border: 1px solid #E4E5E7;
+            overflow: hidden;
+        }
+        
+        
+        /* ACI 1 - 1 */
+        div#client_aci{
+            top: 0px;
+            left: 0px;
+            background: url("../images/clients/Client_ACI.png") no-repeat scroll 0 0 transparent;
+        }
+        
+        div#client_aci:hover{
+            background: url("../images/clients/Client_ACI.png") no-repeat scroll 0 -121px transparent;
+        }
+        
+        /* ATC 1 - 2 */
+        div#client_atc{
+            top: 124px;
+            left: 0px;
+            background: url("../images/clients/Client_ATC.png") no-repeat scroll 0 0 transparent;
+        }
+        
+        div#client_atc:hover{
+            background: url("../images/clients/Client_ATC.png") no-repeat scroll 0 -121px transparent;
+        }
+        
+        /* BBG 1 - 3 */
+        div#client_bbg{
+            top: 248px;
+            left: 0px;
+            background: url("../images/clients/Client_BBG.png") no-repeat scroll 0 0 transparent;
+        }
+        
+        div#client_bbg:hover{
+            background: url("../images/clients/Client_BBG.png") no-repeat scroll 0 -121px transparent;
+        }
+        
+        /* CBF 1 - 4 */
+        div#client_cbf{
+            top: 372px;
+            left: 0px;
+            background: url("../images/clients/Client_CBF.png") no-repeat scroll 0 0 transparent;
+        }
+        
+        div#client_cbf:hover{
+            background: url("../images/clients/Client_CBF.png") no-repeat scroll 0 -121px transparent;
+        }
+        
+        /* CIE 1 - 5 */
+        div#client_cie{
+            top: 496px;
+            left: 0px;
+            background: url("../images/clients/Client_CIE.png") no-repeat scroll 0 0 transparent;
+        }
+        
+        div#client_cie:hover{
+            background: url("../images/clients/Client_CIE.png") no-repeat scroll 0 -121px transparent;
+        }
+        
+        /* BBG 2 - 1 */
+        div#client_cue{
+            top: 0px;
+            left: 153px;
+            background: url("../images/clients/Client_CUE.png") no-repeat scroll 0 0 transparent;
+        }
+        
+        div#client_cue:hover{
+            background: url("../images/clients/Client_CUE.png") no-repeat scroll 0 -121px transparent;
+        }
+        
+        /* GLD 2 - 2 */
+        div#client_gld{
+            top: 124px;
+            left: 153px;
+            background: url("../images/clients/Client_GLD.png") no-repeat scroll 0 0 transparent;
+        }
+        
+        div#client_gld:hover{
+            background: url("../images/clients/Client_GLD.png") no-repeat scroll 0 -121px transparent;
+        }
+        
+        /* GTP 2 - 3 */
+        div#client_gtp{
+            top: 248px;
+            left: 153px;
+            background: url("../images/clients/Client_GTP.png") no-repeat scroll 0 0 transparent;
+        }
+        
+        div#client_gtp:hover{
+            background: url("../images/clients/Client_GTP.png") no-repeat scroll 0 -121px transparent;
+        }
+        
+        /* HHC 2 - 4 */
+        div#client_hhc{
+            top: 372px;
+            left: 153px;
+            background: url("../images/clients/Client_HHC.png") no-repeat scroll 0 0 transparent;
+        }
+        
+        div#client_hhc:hover{
+            background: url("../images/clients/Client_HHC.png") no-repeat scroll 0 -121px transparent;
+        }
+        
+        /* HSL 2 - 5 */
+        div#client_hsl{
+            top: 496px;
+            left: 153px;
+            background: url("../images/clients/Client_HSL.png") no-repeat scroll 0 0 transparent;
+        }
+        
+        div#client_hsl:hover{
+            background: url("../images/clients/Client_HSL.png") no-repeat scroll 0 -121px transparent;
+        }
+        
+        /* LIN3 - 1 */
+        div#client_lin{
+            top: 0;
+            left: 306px;
+            background: url("../images/clients/Client_LIN.png") no-repeat scroll 0 0 transparent;
+        }
+        
+        div#client_lin:hover{
+            background: url("../images/clients/Client_LIN.png") no-repeat scroll 0 -121px transparent;
+        }
+        
+        /* LJL 3 - 2 */
+        div#client_ljl{
+            top: 124px;
+            left: 306px;
+            background: url("../images/clients/Client_LJL.png") no-repeat scroll 0 0 transparent;
+        }
+        
+        div#client_ljl:hover{
+            background: url("../images/clients/Client_LJL.png") no-repeat scroll 0 -121px transparent;
+        }
+        
+        /* LMX 3 - 3 */
+        div#client_lmx{
+            top: 248px;
+            left: 306px;
+            background: url("../images/clients/Client_LMX.png") no-repeat scroll 0 0 transparent;
+        }
+        
+        div#client_lmx:hover{
+            background: url("../images/clients/Client_LMX.png") no-repeat scroll 0 -121px transparent;
+        }
+        
+        /* MTG 3 - 4 */
+        div#client_mtg{
+            top: 372px;
+            left: 306px;
+            background: url("../images/clients/Client_MTG.png") no-repeat scroll 0 0 transparent;
+        }
+        
+        div#client_mtg:hover{
+            background: url("../images/clients/Client_MTG.png") no-repeat scroll 0 -121px transparent;
+        }
+        
+        /* MTS 3 - 5 */
+        div#client_mts{
+            top: 496px;
+            left: 306px;
+            background: url("../images/clients/Client_MTS.png") no-repeat scroll 0 0 transparent;
+        }
+        
+        div#client_mts:hover{
+            background: url("../images/clients/Client_MTS.png") no-repeat scroll 0 -121px transparent;
+        }
+        
+        /* NJA 4 - 1 */
+        div#client_nja{
+            top: 0;
+            left: 459px;
+            background: url("../images/clients/Client_NJA.png") no-repeat scroll 0 0 transparent;
+        }
+        
+        div#client_nja:hover{
+            background: url("../images/clients/Client_NJA.png") no-repeat scroll 0 -121px transparent;
+        }
+        
+        /* NTG 4 - 2 */
+        div#client_ntg{
+            top: 124px;
+            left: 459px;
+            background: url("../images/clients/Client_NTG.png") no-repeat scroll 0 0 transparent;
+        }
+        
+        div#client_ntg:hover{
+            background: url("../images/clients/Client_NTG.png") no-repeat scroll 0 -121px transparent;
+        }
+        
+        /* ONV 4 - 3 */
+        div#client_onv{
+            top: 248px;
+            left: 459px;
+            background: url("../images/clients/Client_ONV.png") no-repeat scroll 0 0 transparent;
+        }
+        
+        div#client_onv:hover{
+            background: url("../images/clients/Client_ONV.png") no-repeat scroll 0 -121px transparent;
+        }
+        
+        /* PMA 4 - 4 */
+        div#client_pma{
+            top: 372px;
+            left: 459px;
+            background: url("../images/clients/Client_PMA.png") no-repeat scroll 0 0 transparent;
+        }
+        
+        div#client_pma:hover{
+            background: url("../images/clients/Client_PMA.png") no-repeat scroll 0 -121px transparent;
+        }
+        
+        /* PMA 4 - 5 */
+        div#client_wps{
+            top: 496px;
+            left: 459px;
+            background: url("../images/clients/Client_WPS.png") no-repeat scroll 0 0 transparent;
+        }
+        
+        div#client_wps:hover{
+            background: url("../images/clients/Client_WPS.png") no-repeat scroll 0 -121px transparent;
+        }
+
+        
+        
+    }
+
+    
+    
+}

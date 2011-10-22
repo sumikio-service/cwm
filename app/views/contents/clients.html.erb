@@ -9,13 +9,36 @@
   <h2><img src="images/clients/about_clients.png" alt="about clients" /></h2>
   <p class="clients_exp">Our clients are companies that understand the value of marketing and the importance of rich media content. Clients range from entrepreneurs and start-ups to medium-size corporations and non-profits across many industries. Whether B2C or B2B, we are always inspired by our clients’ unique stories and love to help them spread their message.</p>
   
+  <div class="testimonials">TESTIMONIALS</div>
   <div id="client_video">
   <!--  1219126929001 1219126951001 1219252727001 -->
-  <%= render :partial => "player_brightcove", :locals => { :video_id => "1219126929001", :width => "600", :height => "338", :template_load_handler => "", :auto_play => false } %>
+  <%= render :partial => "player_brightcove", :locals => { :video_id => "1219126929001", :width => "610", :height => "340", :template_load_handler => "onTemplateReadyClients", :auto_play => false } %>
+  </div>
+  <div id="video_menu">
+    <a href="#" id="client_video_1" class="video_title_a">
+    <div class="video_title">
+      <div class="thumbnail"></div>
+      <div class="name">Angelo Raymundo</div>
+      <div class="title">Real Estate Consult</div>
+    </div>
+    </a>
+    <a href="#" id="client_video_2" class="video_title_a">
+    <div id="client_video_2" class="video_title">
+      <div class="thumbnail"></div>
+      <div class="name">Marcia Lam</div>
+      <div class="title">Lin Jin Asian Kitchen</div>
+    </div>
+    </a>
+    <a href="#" id="client_video_3" class="video_title_a">
+    <div id="client_video_3" class="video_title">
+      <div class="thumbnail"></div>
+      <div class="name">Ling-ju Lai</div>
+      <div class="title">Pianist</div>
+    </div>
+    </a>
   </div>
   
-  
-  
+  <p id="recent">Some of our recent clients.</p>
   <div id="clients_logos">
     <div id="client_aci" class="clientlogo">ACI</div>
     <div id="client_atc" class="clientlogo">ATC</div>

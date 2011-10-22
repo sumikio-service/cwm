@@ -89,17 +89,14 @@ div#left_area{
                 div.result_area{
                     
                     position: absolute;
-                    right: 30px;
+                    right: 20px;
                     top: 40px;
                     
                     div.result{
                         display: none;
-                        width: 200px;
-                        height: 200px;
-                        background: #EEEEEE;
-                        padding: 10px;
-                        border: 1px solid #888888;
-                        font-size: 70%;
+                        width: 260px;
+                        height: 260px;
+                        background: url("/images/contact/Contact_autoreply.png") no-repeat scroll 0 0 transparent;
                     }
                 }
                 

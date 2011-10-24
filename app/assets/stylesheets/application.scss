@@ -351,5 +351,25 @@ div#footer{
     }
 }
 
+div#overLayer{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 100;
+}
 
+div#glayLayer{
+    position: fixed;
+    background: white;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    filter : alpha(opacity=45);
+    -moz-opacity: 0.45;
+    opacity : 0.45;
+    z-index: 101;
+}
 
